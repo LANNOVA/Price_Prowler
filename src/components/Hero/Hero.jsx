@@ -17,7 +17,7 @@ const Hero = () => {
     const [amazonChecked, setAmazonChecked] = useState(true);
     const [walmartChecked, setWalmartChecked] = useState(false);
     const [costcoChecked, setCostcoChecked] = useState(false);
-    const [dollartreeChecked, setDollartreeChecked] = useState(falsee);
+    const [dollartreeChecked, setDollartreeChecked] = useState(false);
 
     const constructAPIUrl = () => {
     const baseUrl = 'https://api.thepriceprowler.com/search';
