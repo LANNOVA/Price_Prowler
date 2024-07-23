@@ -21,9 +21,9 @@ const About = () => {
                 <div class="col-8">
                     <div class="about-txt">
                         <h1>Welcome to The Price Prowler!</h1>
-                        <p className='para'>At The Price Prowler, we are passionate about saving our users' money. Our journey began with a simple idea: What if sorting products from multiple online stores was easy?</p>
+                        <p className='para'>At The Price Prowler, we are passionate about saving our users money. Our journey began with a simple idea: What if sorting products from multiple online stores was easy?</p>
                         <h1 className='mission'>Our Mission</h1>
-                        <p className='para'>We strive to help you find value. Our aim is to put provide a tool that allows our users to search across major online stores and sort through products to find the best value possible. The Price Prowler will search across online stores and give you the best price per unit (PPU) for whatever product you search.</p>
+                        <p className='para'>We strive to help you find value. Our aim is to provide a tool that allows our users to search across major online stores and sort through products to find the best value possible. The Price Prowler will search across online stores and give you the best price per unit (PPU) for any product you search.</p>
                     </div>
                 </div>
                 <div class="col-2">
