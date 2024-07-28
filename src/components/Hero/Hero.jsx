@@ -19,6 +19,7 @@ const Hero = () => {
     const [costcoChecked, setCostcoChecked] = useState(false);
     const [dollartreeChecked, setDollartreeChecked] = useState(false);
     const [homedepotChecked, sethomedepotChecked] = useState(false);
+    const [acehardwareChecked, setacehardwareChecked] = useState(false);
     const constructAPIUrl = () => {
     const baseUrl = 'https://api.thepriceprowler.com/search';
     const queryParams = [`item=${item}`, `unit=${unit}`];
@@ -41,6 +42,9 @@ const Hero = () => {
     if (homedepotChecked) {
         queryParams.push('hdt=y');
     }
+    if (acehardwareChecked) {
+        queryParams.push('ace=y');
+    }
     return `${baseUrl}?${queryParams.join('&')}`;
   };
 
@@ -52,7 +56,7 @@ const Hero = () => {
         return;
     }
     
-    if (!(amazonChecked || walmartChecked || costcoChecked || dollartreeChecked || homedepotChecked)) {
+    if (!(amazonChecked || walmartChecked || costcoChecked || dollartreeChecked || homedepotChecked || acehardwareChecked)) {
         alert('Please check at least one checkbox.');
         return;
     }
@@ -121,6 +125,7 @@ const Hero = () => {
                                                 <div className="vendor-tick"><input type="checkbox" name="options" id="costco" checked={costcoChecked} onChange={(e) => setCostcoChecked(e.target.checked)}/><label >COSTCO</label></div>
                                                 <div className="vendor-tick"><input type="checkbox" name="options" id="dollartree" checked={dollartreeChecked} onChange={(e) => setDollartreeChecked(e.target.checked)}/><label >DOLLARTREE</label></div>
                                                 <div className="vendor-tick"><input type="checkbox" name="options" id="homedepot" checked={homedepotChecked} onChange={(e) => sethomedepotChecked(e.target.checked)}/><label >HOMEDEPOT</label></div>
+                                                <div className="vendor-tick"><input type="checkbox" name="options" id="acehardware" checked={acehardwareChecked} onChange={(e) => setacehardwareChecked(e.target.checked)}/><label >ACEHARDWARE</label></div>
                                             </div>
                                         </div>
                                         <div className="submit-btn">
